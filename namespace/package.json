@@ -1,0 +1,15 @@
+{
+  "name": "namespace",
+  "version": "0.0.1",
+  "description": "Automatically apply and replace namespaces to each block, item, entity, recipe, attachable, particle, and fog. Useful for temporary namespaces before deployment.",
+  "main": "namespace.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cda94581/regolith-filters.git"
+  },
+  "author": "cda94581",
+  "license": "MIT",
+  "dependencies": {
+    "glob": "^7.2.0"
+  }
+}

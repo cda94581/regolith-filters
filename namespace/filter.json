@@ -1,0 +1,11 @@
+{
+	"description": "Automatically apply and replace namespaces to each block, item, entity, recipe, attachable, particle, and fog. Useful for temporary namespaces before deployment.",
+	"filters": [
+		{ "filter": "json_cleaner" },
+		{
+			"runWith": "nodejs",
+			"script": "./namespace.js",
+			"name": "Setting & Replacing Namespaces"
+		}
+	]
+}

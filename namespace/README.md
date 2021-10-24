@@ -23,5 +23,6 @@ This only affects the namespace in the `description -> identifier`. Event namesp
 ### Settings
 
 Name | Default | Description
+---- | ------- | -----------
 `ignored_namespaces` | `[]` | A list of namespaces to ignore, you don't want to change these namespaces for whatever reason
 `namespace` | test | A namespace to set/replace.

@@ -38,7 +38,7 @@ In order to add any of these filters, you must open the `config.json` file and a
 }
 ```
 
-Replace `FILTER_REPO_FOLDER` with the filter, in the format: `https://github.com/cda94581/regolith-filters/<FILTERNAME>`, replacing `<FILTERNAME>` with the folder containing the filter you would like.
+Replace `FILTER_REPO_FOLDER` with the filter, in the format: `github.com/cda94581/regolith-filters/<FILTERNAME>`, replacing `<FILTERNAME>` with the folder containing the filter you would like.
 
 Afterwards, run `regolith install` to install the filters. Finally, you may `regolith run [PROFILE]` in order to build your add-on with the filters.  
 Additional information about each filter may be provided in a `README.md` file, in that folder.

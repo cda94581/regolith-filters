@@ -1,0 +1,16 @@
+{
+	"description": "Minimize all file JSONs. Can save a tiny bit of space. Also kinda pointless but whatever.",
+	"filters": [
+		{ "filter": "json_cleaner" },
+		{
+			"runWith": "shell",
+			"script": "npm i glob",
+			"name": "Install required NPM packages"
+		},
+		{
+			"runWith": "nodejs",
+			"script": "./minimize.js",
+			"name": "Minimizing all JSON files"
+		}
+	]
+}

@@ -3,11 +3,6 @@
 	"filters": [
 		{ "filter": "json_cleaner" },
 		{
-			"runWith": "shell",
-			"script": "npm i glob",
-			"name": "Install required NPM packages"
-		},
-		{
 			"runWith": "nodejs",
 			"script": "./minimize.js",
 			"name": "Minimizing all JSON files"

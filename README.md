@@ -63,6 +63,8 @@ Below is just a list of ideas I have for different filters, I may work on them s
 	- Not foolproof
 - [ ] Add-on Watermark
 	- Create a watermark for your add-on so all users will know the creator
-- [ ] I'm certain I had a brilliant idea earlier but I forgot it ;-;
+- [ ] Add-on Export
+- [ ] Syntax Validation & Warnings
+- [ ] Add-on Style Guide
 
 Well, I guess I should get to work on these filters at some point. Typing will get me nowhere :>.

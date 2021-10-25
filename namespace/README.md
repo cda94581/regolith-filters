@@ -8,15 +8,19 @@ This only affects the namespace in the `description -> identifier`. Event namesp
 ## Usage
 ```json
 {
-	"filters": [
-		{
-			"url": "github.com/cda94581/regolith-filters/namespace",
-			"settings": {
-				"ignored_namespaces": [ "ignorenamespace" ],
-				"namespace": "namespace"
+	"namespace": "test",
+	"regolith": {
+		"profiles": {
+			"<Profile>": {
+				"filters": [{
+					"url": "github.com/cda94581/regolith-filters/namespace",
+					"settings": {
+						"ignored_namespaces": [ "tnt" ]
+					}
+				}]
 			}
 		}
-	]
+	}
 }
 ```
 
@@ -24,5 +28,4 @@ This only affects the namespace in the `description -> identifier`. Event namesp
 
 Name | Default | Description
 ---- | ------- | -----------
-`ignored_namespaces` | `[]` | A list of namespaces to ignore, you don't want to change these namespaces for whatever reason
-`namespace` | test | A namespace to set/replace.
+`ignored_namespaces` | `[]` | A list of namespaces to ignore, you don't want to change these namespaces for whatever reason.

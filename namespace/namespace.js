@@ -1,6 +1,7 @@
 const glob = require('glob');
 const fs = require('fs');
-let { ignored_namespaces, namespace } = JSON.parse(process.argv[2]);
+let { ignored_namespaces } = JSON.parse(process.argv[2]);
+const { namespace } = JSON.parse(fs.readFileSync('../../config.json', 'utf-8'));
 if ( !namespace || namespace == undefined ) namespace = 'test';
 if ( !ignored_namespaces || ignored_namespaces == undefined ) ignored_namespaces = [];
 

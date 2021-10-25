@@ -1,4 +1,4 @@
-# namespace
+# minimize
 This filter minimizes all JSON files to save a tiny bit of space. Useful for larger files where whitespace takes up a lot of storage.
 
 The filter simply works by parsing and then reformatting a JSON file. Given the `JSON.stringify()`'s behavior, it generates minimized unless additional parameters are specified.

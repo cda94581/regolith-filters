@@ -1,0 +1,15 @@
+{
+  "name": "export",
+  "version": "0.0.1",
+  "description": "Exports your add-on int a \".mcaddon\" automatically.",
+  "main": "export.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cda94581/regolith-filters.git"
+  },
+  "author": "cda94581",
+  "license": "MIT",
+  "dependencies": {
+    "archiver": "^5.3.0"
+  }
+}

@@ -1,0 +1,10 @@
+{
+	"description": "Exports your add-on into a \".mcaddon\" automatically.",
+	"filters": [
+		{
+			"runWith": "nodejs",
+			"script": "./export.js",
+			"name": "Packaging add-on"
+		}
+	]
+}

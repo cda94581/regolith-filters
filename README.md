@@ -63,7 +63,8 @@ Below is just a list of ideas I have for different filters, I may work on them s
 	- Not foolproof
 - [ ] Add-on Watermark
 	- Create a watermark for your add-on so all users will know the creator
-- [ ] Add-on Export
+- [x] Add-on Export
+	- Exports the add-on into a ".mcaddon" file so that you can be lazy
 - [ ] Syntax Validation & Warnings
 - [ ] Add-on Style Guide
 

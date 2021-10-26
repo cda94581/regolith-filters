@@ -47,25 +47,29 @@ Additional information about each filter may be provided in a `README.md` file, 
 Below is just a list of ideas I have for different filters, I may work on them someday. Knowing me, I'll likely use JS because it's most familiar for me.
 
 - [ ] Minimize JSON
-	- Minimize the JSON, as well as Molang
-	- Molang may require a parser? Create one/experiment with available npm packages?
-	- Condense Molang variables/queries/etc. to `v.`/`q.`
+	- [x] Minimize the JSON, as well as Molang
+	- [ ] Molang may require a parser? Create one/experiment with available npm packages?
+	- [ ] Condense Molang variables/queries/etc. to `v.`/`q.`
 - [ ] Automated Texts Localization
-	- The first `//` comment of a file will be the name of a item/block/entity/etc. Can then strip the names and generate the localization files automatically.
+	- [ ] The first `//` comment of a file will be the name of a item/block/entity/etc. Can then strip the names and generate the localization files automatically.
 - [ ] Auto-Apply Namespace
-	- Just type an identifier for blocks/items/entities/etc., namespace will be added upon deployment.
+	- [x] Just type an identifier for blocks/items/entities/etc., namespace will be added upon deployment.
 	- Useful for temporary namespaces.
+	- [ ] Component Groups & Events
 - [ ] GIMP to PNG
-	- As the community already has a PSD and KRA to PNG, why not also have a GIMP file to PNG?
-	- Alternatively, merge all the image filters to one?
+	- [ ] As the community already has a PSD and KRA to PNG, why not also have a GIMP file to PNG?
+	- [ ] Alternatively, merge all the image filters to one?
 - [ ] JSON Text to Unicode
-	- Confusify the JSON in order to slow down those trying to steal code
+	- [ ] Confusify the JSON in order to slow down those trying to steal code
 	- Not foolproof
 - [ ] Add-on Watermark
-	- Create a watermark for your add-on so all users will know the creator
+	- [ ] Create a watermark for your add-on so all users will know the creator
 - [x] Add-on Export
-	- Exports the add-on into a ".mcaddon" file so that you can be lazy
+	- [x] Exports the add-on into a ".mcaddon" file so that you can be lazy
 - [ ] Syntax Validation & Warnings
+	- [ ] Validate all add-on syntax
+	- [ ] Proactively warn users of any content logs they may experience
 - [ ] Add-on Style Guide
+	- [ ] Redefine everything in each file to follow the Bedrock Wiki's [style guide](https://wiki.bedrock.dev/meta/style-guide.html)
 
 Well, I guess I should get to work on these filters at some point. Typing will get me nowhere :>.

@@ -30,7 +30,7 @@ In order to add any of these filters, you must open the `config.json` file and a
 	"dev": {
 	  "filters": [
 		{
-			"filter": "FILTER_REPO_FOLDER"
+			"url": "FILTER_REPO_FOLDER"
 		}
 	  ]
 	}

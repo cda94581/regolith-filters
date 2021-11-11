@@ -1,0 +1,15 @@
+{
+  "name": "e-backup",
+  "version": "0.0.1",
+  "description": "Backups your export target in case you made a mistake.",
+  "main": "e-backup.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cda94581/regolith-filters.git"
+  },
+  "author": "cda94581",
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^10.0.0"
+  }
+}

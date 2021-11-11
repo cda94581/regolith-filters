@@ -1,0 +1,10 @@
+{
+	"description": "Backups your export target in case you made a mistake.",
+	"filters": [
+		{
+			"runWith": "nodejs",
+			"script": "./e-backup.js",
+			"name": "Backing up target"
+		}
+	]
+}

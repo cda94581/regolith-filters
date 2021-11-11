@@ -6,6 +6,8 @@ The filter simply works by parsing and then reformatting a JSON file. Given the 
 As of right now, this only minimizes JSON. However, future Molang minmization & simplification is planned.
 
 ## Usage
+This filter requires that you have [nodejs](https://nodejs.org/en/) installed.
+
 ```json
 {
 	"filters": [

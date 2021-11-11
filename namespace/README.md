@@ -6,6 +6,8 @@ The filter works by extracting the identifier from each file and splitting it in
 This only affects the namespace in the `description -> identifier`. Event namespaces and such are still a WIP.
 
 ## Usage
+This filter requires that you have [nodejs](https://nodejs.org/en/) installed.
+
 ```json
 {
 	"namespace": "test",

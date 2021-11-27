@@ -37,17 +37,22 @@ Name | Default | Description
 There are two possible values for the `type` setting. A detailed explanation is found below.
 
 ##### keys
-**DUE TO ONGOING DEVELOPMENT, THIS TYPE HAS BEEN TEMPORARILY DISABLED.**
-
-The `keys` type runs through the key/value pairs of all the files and finds any of the keys or values which follow the format `namespace:identifier`, or should do so, and replaces the key/values as such.  
-As of right now, this only applies to the identifier in the description, however others are planned soon.  
+The `keys` type runs through the key/value pairs of all the files and finds any of the keys or values which follow the format `namespace:identifier`, or should do so, and replaces the key/values as such.   
 This is the recommended type, as it is safer to use. This type uses the `ignoredNamespaces` setting.
+
+###### Known Issues
+- Molang may be messed up with this
+- Keys are not changed
 
 ##### find
 This is an agressive type which runs through the files and replaces everything that matches a pattern, specified by `oldNamespace`. This guarantees those with a namespace are replaced.  
 While using this type, be extremely cautious in your file to not use the string where you don't want it to be replaced. Doing so will replace string. This type uses the `oldNamespace` setting.
 
 ## Changelogs
+### 0.0.3
+- Handle errors for invalid namespace replacement types
+- Implemented workable version of `keys` type
+
 ### 0.0.2
 - Changed default new namespace from `test` to `newNamespace`
 - Changed ignored namespaces key setting `ignored_namespaces` to `ignoredNamespaces`

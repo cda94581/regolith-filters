@@ -3,7 +3,7 @@
 	"filters": [
 		{
 			"runWith": "nodejs",
-			"script": "scalable-teams.js",
+			"script": "./scalable-teams.js",
 			"name": "Applying Scalable Teams Add-on"
 		}
 	]

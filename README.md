@@ -56,9 +56,6 @@ Below is just a list of ideas I have for different filters, I may work on them s
 	- [x] Just type an identifier for blocks/items/entities/etc., namespace will be added upon deployment.
 	- Useful for temporary namespaces.
 	- [ ] Component Groups & Events
-- [ ] GIMP to PNG
-	- [ ] As the community already has a PSD and KRA to PNG, why not also have a GIMP file to PNG?
-	- [ ] Alternatively, merge all the image filters to one?
 - [ ] JSON Text to Unicode
 	- [ ] Confusify the JSON in order to slow down those trying to steal code
 	- Not foolproof

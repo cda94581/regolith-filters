@@ -56,8 +56,12 @@ Below is just a list of ideas I have for different filters, I may work on them s
 	- [x] Just type an identifier for blocks/items/entities/etc., namespace will be added upon deployment.
 	- Useful for temporary namespaces.
 	- [ ] Component Groups & Events
-- [ ] JSON Text to Unicode
+- [ ] Obfuscate
 	- [ ] Confusify the JSON in order to slow down those trying to steal code
+	- [ ] Random Comments
+	- [ ] Random JSON (in a way that still allows MC to open)
+	- [ ] Rename Files
+	- [ ] Dummy Files
 	- Not foolproof
 - [ ] Add-on Watermark
 	- [ ] Create a watermark for your add-on so all users will know the creator

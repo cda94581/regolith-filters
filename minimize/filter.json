@@ -4,7 +4,7 @@
 		{
 			"runWith": "nodejs",
 			"script": "./minimize.js",
-			"name": "Minimizing all JSON files"
+			"name": "Minimizing files"
 		}
 	]
 }

@@ -14,10 +14,10 @@ let namespace = 'newNamespace';
 // User
 try {
 	settings = JSON.parse(settings);
-	type = settings.type;
-	ignoredNamespaces = settings.ignoredNamespaces;
-	oldNamespace = settings.oldNamespace;
-	namespace = JSON.parse(fs.readFileSync('../../config.json', 'utf-8')).namespace;
+	type = settings.type || type;
+	ignoredNamespaces = settings.ignoredNamespaces || type;
+	oldNamespace = settings.oldNamespace || oldNamespace;
+	namespace = JSON.parse(fs.readFileSync('../../config.json', 'utf-8')).namespace || namespace;
 } catch {}
 
 
@@ -51,13 +51,14 @@ glob('@(B|R)P/**/*.json', (err, files) => {
 		}
 
 		function find() {
+			file = JSON.stringify(file, null, '\t');
+			file = file.replace(new RegExp(oldNamespace, 'g'), namespace);
 			if (!f.includes(oldNamespace)) return;
-			const newPath = f.replace(new RegExp(oldNamespace, 'g'), config.namespace);
+			const newPath = f.replace(new RegExp(oldNamespace, 'g'), namespace);
 			fs.moveSync(f, newPath);
 		}
 
-		// Write out file
-		fs.outputFileSync(f, file, err => { if (err) throw err; });
+		fs.outputFileSync(f, file, 'utf-8');
 	});
 });
 

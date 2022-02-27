@@ -9,7 +9,19 @@ This filter requires that you have [nodejs](https://nodejs.org/en/) installed.
 ```json
 {
 	"filters": [
-		{ "url": "github.com/cda94581/regolith-filters/export" }
+		{
+			"url": "github.com/cda94581/regolith-filters/export",
+			"exclude": [ "RP" ]
+		}
 	]
 }
 ```
+
+### Settings
+
+Name | Default | Description
+---- | ------- | -----------
+`exclude` | `[]` | Exclude BPs or RPs from being exported.
+
+#### exclude
+Allowed values: `BP`, `RP`

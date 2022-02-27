@@ -47,7 +47,9 @@ Additional information about each filter may be provided in a `README.md` file, 
 Below is just a list of ideas I have for different filters, I may work on them someday. Knowing me, I'll likely use JS because it's most familiar for me.
 
 - [ ] Minimize JSON
-	- [x] Minimize the JSON, as well as Molang
+	- [x] Minimize the JSON
+	- [x] Minimize JS
+	- [ ] Minimize Molang
 	- [ ] Molang may require a parser? Create one/experiment with available npm packages?
 	- [ ] Condense Molang variables/queries/etc. to `v.`/`q.`
 - [ ] Automated Texts Localization

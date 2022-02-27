@@ -51,15 +51,14 @@ glob('@(B|R)P/**/*.json', (err, files) => {
 		}
 
 		function find() {
-			file = JSON.stringify(file, null, '\t');
-			file = file.replace(new RegExp(oldNamespace, 'g'), namespace);
-			if (f.match(new RegExp(oldNamespace))) {
-				fs.unlinkSync(f);
-				f = f.replace(new RegExp(oldNamespace, 'g'), namespace);
-			}
+			if (!f.includes(oldNamespace)) return;
+			const newPath = f.replace(new RegExp(oldNamespace, 'g'), config.namespace);
+			fs.moveSync(f, newPath);
 		}
 
 		// Write out file
 		fs.outputFileSync(f, file, err => { if (err) throw err; });
 	});
 });
+
+if (type == 'find') glob('@(B|R)P/**/', (err, files) => files.forEach(f => { if (f.endsWith(`${oldNamespace}/`)) fs.removeSync(f); }));

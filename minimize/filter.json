@@ -1,7 +1,6 @@
 {
 	"description": "Minimize all file JSONs. Can save a tiny bit of space. Also kinda pointless but whatever.",
 	"filters": [
-		{ "filter": "json_cleaner" },
 		{
 			"runWith": "nodejs",
 			"script": "./minimize.js",

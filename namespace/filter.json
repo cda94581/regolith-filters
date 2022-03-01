@@ -7,5 +7,6 @@
 			"script": "./namespace.js",
 			"name": "Setting & Replacing Namespaces"
 		}
-	]
+	],
+	"version": "0.0.5"
 }

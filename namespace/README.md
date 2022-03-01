@@ -49,6 +49,12 @@ This is an agressive type which runs through the files and replaces everything t
 While using this type, be extremely cautious in your file to not use the string where you don't want it to be replaced. Doing so will replace string. This type uses the `oldNamespace` setting.
 
 ## Changelogs
+### 0.0.5
+- Updated to hopefully properly support regolith 0.0.8
+
+### 0.0.4
+- Updated "find" message to remove folders named "namespace"
+
 ### 0.0.3
 - Handle errors for invalid namespace replacement types
 - Implemented workable version of `keys` type

@@ -11,7 +11,6 @@ This filter requires that you have [nodejs](https://nodejs.org/en/) installed.
 The profile's export target MUST be set to `exact` for the filter to work.
 
 Install this filter by running (`regolith install github.com/cda94581/regolith-filters/e-backup`). Apply the filters similar to the example:
-e-backup
 ```json
 {
 	"namespace": "test",

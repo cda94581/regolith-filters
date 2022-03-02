@@ -1,4 +1,6 @@
 # e-backup
+Version **0.0.1**
+
 This filter backs up your target destination before exporting. Useful as an extra layer of saftey, in case you accidentally end up deleting everything you cared about. I did that on day one of using regolith, so this is to make it safer for all.
 
 Simply works by copying the files from the target destination.
@@ -38,3 +40,7 @@ e-backup
 Name | Default | Description
 ---- | ------- | -----------
 `profile` | `dev` | This is used within the program. Set this to the same as your regolith profile.
+
+## Changelog
+### 0.0.1
+- Initial release

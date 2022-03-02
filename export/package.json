@@ -1,6 +1,6 @@
 {
   "name": "export",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Exports your add-on int a \".mcaddon\" automatically.",
   "main": "export.js",
   "repository": {

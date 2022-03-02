@@ -1,4 +1,6 @@
 # export
+Version **0.0.2**
+
 This filter exports the behavior pack and resource pack into a ".mcaddon" file, ready for distribution.
 
 Umm...I don't need to explain how it works, do I? Well, I mean it just compresses the file into a ".zip" format, then renames it. It just does it automatically for you so you don't have to manually do it.
@@ -29,3 +31,10 @@ Name | Default | Description
 
 #### exclude
 Allowed values: `BP`, `RP`
+
+## Changelog
+### 0.0.2
+- Exclusion of Certain Files
+
+### 0.0.1
+- Initial release

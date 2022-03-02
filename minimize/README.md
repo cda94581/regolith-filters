@@ -1,4 +1,6 @@
 # minimize
+Version **0.0.2**
+
 This filter minimizes all JSON and JS files to save a tiny bit of space. Useful for larger files where whitespace takes up a lot of storage.
 
 The filter simply works by parsing and then reformatting a JSON file. Given the `JSON.stringify()`'s behavior, it generates minimized unless additional parameters are specified.
@@ -17,3 +19,10 @@ Install this filter by running (`regolith install github.com/cda94581/regolith-f
 	]
 }
 ```
+
+## Changelog
+### 0.0.2
+- JS Minify
+
+### 0.0.1
+- Initial release

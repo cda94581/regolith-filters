@@ -1,7 +1,7 @@
 {
   "name": "minimize",
   "description": "Minimize all file JSONs. Can save a tiny bit of space. Also kinda pointless but whatever.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "minimize.js",
   "repository": {
     "type": "git",

@@ -1,4 +1,6 @@
 # namespace
+Version **0.0.4**
+
 This filter automatically applies the namespace to all files. Useful for temporary namespaces, or whenever you want to change a namespace upon distribution.
 
 The filter works by extracting the identifier from each file and splitting it into a namespace and an identifier. If no namespace is present, the namespace is then applied. If a namespace is already present, it will run through the settings to make sure the namespace is allowed to be replaced, and then replace it. By default, the "minecraft" and "minecon" namespaces will never be replaced.
@@ -74,4 +76,4 @@ While using this type, be extremely cautious in your file to not use the string 
 - Added `oldNamespace` setting
 
 ### 0.0.1
-- Released first version
+- Initial release

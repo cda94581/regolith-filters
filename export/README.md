@@ -6,12 +6,16 @@ Umm...I don't need to explain how it works, do I? Well, I mean it just compresse
 ## Usage
 This filter requires that you have [nodejs](https://nodejs.org/en/) installed.
 
+Install this filter by running (`regolith install github.com/cda94581/regolith-filters/export`). Apply the filters similar to the example:
+
 ```json
 {
 	"filters": [
 		{
-			"url": "github.com/cda94581/regolith-filters/export",
-			"exclude": [ "RP" ]
+			"filter": "export",
+			"settings": {
+				"exclude": [ "RP" ]
+			}
 		}
 	]
 }

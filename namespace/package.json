@@ -1,6 +1,6 @@
 {
   "name": "namespace",
-  "version": "0.0.5",
+  "version": "0.0.4",
   "description": "Automatically apply and replace namespaces to each block, item, entity, recipe, attachable, particle, and fog. Useful for temporary namespaces before deployment.",
   "main": "namespace.js",
   "repository": {

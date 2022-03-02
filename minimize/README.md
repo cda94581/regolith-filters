@@ -8,10 +8,12 @@ As of right now, this only minimizes JSON. However, future Molang minmization & 
 ## Usage
 This filter requires that you have [nodejs](https://nodejs.org/en/) installed.
 
+Install this filter by running (`regolith install github.com/cda94581/regolith-filters/minimize`). Apply the filters similar to the example:
+
 ```json
 {
 	"filters": [
-		{ "url": "github.com/cda94581/regolith-filters/minimize" }
+		{ "filter": "minimize" }
 	]
 }
 ```

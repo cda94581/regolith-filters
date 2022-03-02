@@ -6,19 +6,26 @@ The filter works by extracting the identifier from each file and splitting it in
 ## Usage
 This filter requires that you have [nodejs](https://nodejs.org/en/) installed.
 
+Please make sure you also have `json_cleaner` installed (`regolith install json_cleaner`). Set this to run before this filter. This is to make sure comments are removed for regolith to properly parse the files.
+
+Install this filter by running (`regolith install github.com/cda94581/regolith-filters/namespace`). Apply the filters similar to the example:
+
 ```json
 {
 	"namespace": "namespace",
 	"regolith": {
 		"profiles": {
 			"<Profile>": {
-				"filters": [{
-					"url": "github.com/cda94581/regolith-filters/namespace",
-					"settings": {
-						"type": "keys",
-						"ignoredNamespaces": [ "tnt" ]
+				"filters": [
+					{ "filter": "json_cleaner" },
+					{
+						"filter": "namespace",
+						"settings": {
+							"type": "keys",
+							"ignoredNamespaces": [ "tnt" ]
+						}
 					}
-				}]
+				]
 			}
 		}
 	}
@@ -49,9 +56,6 @@ This is an agressive type which runs through the files and replaces everything t
 While using this type, be extremely cautious in your file to not use the string where you don't want it to be replaced. Doing so will replace string. This type uses the `oldNamespace` setting.
 
 ## Changelogs
-### 0.0.5
-- Updated to hopefully properly support regolith 0.0.8
-
 ### 0.0.4
 - Updated "find" message to remove folders named "namespace"
 

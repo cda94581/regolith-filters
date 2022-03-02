@@ -22,13 +22,12 @@ try {
 
 
 if (!types.includes(type)) return console.error('The filter will fail due to an invalid type setting.');
-glob('@(B|R)P/**/*.json', (err, files) => {
-	files.forEach(f => {
-		// Setup
-		let file = JSON.parse(fs.readFileSync(f, 'utf-8'));
-		eval(`${type}()`);
+eval(`${type}()`);
+function keys() {
+	glob('@(B|R)P/**/*.json', (err, files) => {
+		files.forEach(f => {
+			let file = JSON.parse(fs.readFileSync(f, 'utf-8'));
 
-		function keys() {
 			file = JSON.stringify(file, (key, val) => {
 				function replaceNamespace(string) {
 					let ns = string;
@@ -48,18 +47,23 @@ glob('@(B|R)P/**/*.json', (err, files) => {
 				if (typeof val != 'string') return (replaceNamespace(key), val);
 				return (replaceNamespace(key), replaceNamespace(val));
 			}, '\t');
-		}
+			
+			fs.outputFileSync(f, file, 'utf-8');
+		});
+	});
+}
 
-		function find() {
+function find() {
+	glob('@(B|R)P/**/*.*', (err, files) => {
+		files.forEach(f => {
+			let file = JSON.parse(fs.readFileSync(f, 'utf-8'));
 			file = JSON.stringify(file, null, '\t');
 			file = file.replace(new RegExp(oldNamespace, 'g'), namespace);
 			if (!f.includes(oldNamespace)) return;
 			const newPath = f.replace(new RegExp(oldNamespace, 'g'), namespace);
 			fs.moveSync(f, newPath);
-		}
-
-		fs.outputFileSync(f, file, 'utf-8');
+			fs.outputFileSync(f, file, 'utf-8');
+		});
 	});
-});
-
-if (type == 'find') glob('@(B|R)P/**/', (err, files) => files.forEach(f => { if (f.endsWith(`${oldNamespace}/`)) fs.removeSync(f); }));
+	glob('@(B|R)P/**/', (err, files) => files.forEach(f => { if (f.endsWith(`${oldNamespace}/`)) fs.removeSync(f); }));
+}

@@ -54,15 +54,18 @@ function keys() {
 }
 
 function find() {
+	glob('@(B|R)P/**/*.json', (err, files) => {
+		files.forEach(f => {
+			let file = fs.readFileSync(f, 'utf-8');
+			file = file.replace(new RegExp(oldNamespace, 'g'), namespace);
+			fs.outputFileSync(f, file, 'utf-8');
+		});
+	});
 	glob('@(B|R)P/**/*.*', (err, files) => {
 		files.forEach(f => {
-			let file = JSON.parse(fs.readFileSync(f, 'utf-8'));
-			file = JSON.stringify(file, null, '\t');
-			file = file.replace(new RegExp(oldNamespace, 'g'), namespace);
 			if (!f.includes(oldNamespace)) return;
 			const newPath = f.replace(new RegExp(oldNamespace, 'g'), namespace);
 			fs.moveSync(f, newPath);
-			fs.outputFileSync(f, file, 'utf-8');
 		});
 	});
 	glob('@(B|R)P/**/', (err, files) => files.forEach(f => { if (f.endsWith(`${oldNamespace}/`)) fs.removeSync(f); }));

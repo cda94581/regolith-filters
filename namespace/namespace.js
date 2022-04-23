@@ -24,7 +24,7 @@ try {
 if (!types.includes(type)) return console.error('The filter will fail due to an invalid type setting.');
 eval(`${type}()`);
 function keys() {
-	glob('@(B|R)P/**/*.json', (err, files) => {
+	glob('@(B|R)P/**/*.@(json|js)', (err, files) => {
 		files.forEach(f => {
 			let file = JSON.parse(fs.readFileSync(f, 'utf-8'));
 
@@ -54,7 +54,7 @@ function keys() {
 }
 
 function find() {
-	glob('@(B|R)P/**/*.json', (err, files) => {
+	glob('@(B|R)P/**/*.@(json|js)', (err, files) => {
 		files.forEach(f => {
 			let file = fs.readFileSync(f, 'utf-8');
 			file = file.replace(new RegExp(oldNamespace, 'g'), namespace);

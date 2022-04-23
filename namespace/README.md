@@ -58,6 +58,9 @@ This is an agressive type which runs through the files and replaces everything t
 While using this type, be extremely cautious in your file to not use the string where you don't want it to be replaced. Doing so will replace string. This type uses the `oldNamespace` setting.
 
 ## Changelogs
+### 0.0.5
+- Updated filters to replace JavaScript files as well
+
 ### 0.0.4
 - Updated "find" message to remove folders named "namespace"
 

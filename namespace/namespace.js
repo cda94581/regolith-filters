@@ -54,7 +54,7 @@ function keys() {
 }
 
 function find() {
-	glob('@(B|R)P/**/*.@(json|js)', (err, files) => {
+	glob('@(B|R)P/**/*.@(json|js|lang)', (err, files) => {
 		files.forEach(f => {
 			let file = fs.readFileSync(f, 'utf-8');
 			file = file.replace(new RegExp(oldNamespace, 'g'), namespace);

@@ -1,5 +1,5 @@
 # namespace
-Version **0.0.6**
+Version **0.0.7**
 
 This filter automatically applies the namespace to all files. Useful for temporary namespaces, or whenever you want to change a namespace upon distribution.
 
@@ -58,6 +58,9 @@ This is an agressive type which runs through the files and replaces everything t
 While using this type, be extremely cautious in your file to not use the string where you don't want it to be replaced. Doing so will replace string. This type uses the `oldNamespace` setting.
 
 ## Changelogs
+### 0.0.7
+- Updated filter to reflect proper description syntax
+
 ### 0.0.6
 - Updated "find" filter for .lang files
 

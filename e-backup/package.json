@@ -1,6 +1,6 @@
 {
   "name": "e-backup",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Backups your export target in case you made a mistake.",
   "main": "e-backup.js",
   "repository": {

@@ -1,5 +1,5 @@
 # export
-Version **0.0.2**
+Version **0.0.3**
 
 This filter exports the behavior pack and resource pack into a ".mcaddon" file, ready for distribution.
 
@@ -33,6 +33,9 @@ Name | Default | Description
 Allowed values: `BP`, `RP`
 
 ## Changelog
+### 0.0.3
+- Updated filter to reflect proper description syntax
+
 ### 0.0.2
 - Exclusion of Certain Files
 

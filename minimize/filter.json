@@ -1,10 +1,10 @@
 {
-	"description": "Minimize all file JSONs. Can save a tiny bit of space. Also kinda pointless but whatever.",
 	"filters": [
 		{
 			"runWith": "nodejs",
 			"script": "./minimize.js",
-			"name": "Minimizing files"
+			"name": "Minimizing files",
+			"description": "Minimize all file JSONs. Can save a tiny bit of space. Also kinda pointless but whatever."
 		}
 	]
 }

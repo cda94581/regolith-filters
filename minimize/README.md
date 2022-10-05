@@ -1,5 +1,5 @@
 # minimize
-Version **0.0.3**
+Version **0.0.4**
 
 This filter minimizes all JSON and JS files to save a tiny bit of space. Useful for larger files where whitespace takes up a lot of storage.
 
@@ -21,6 +21,9 @@ Install this filter by running (`regolith install github.com/cda94581/regolith-f
 ```
 
 ## Changelog
+### 0.0.4
+- Updated JS minify with new proper endpoint
+
 ### 0.0.3
 - Updated filter to reflect proper description syntax
 

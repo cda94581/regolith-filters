@@ -17,7 +17,7 @@ glob('@(B|R)P/**/*.js', (err, files) => {
 		const query = querystring.stringify({ input: fs.readFileSync(f, 'utf-8') });
 		const stream = fs.createWriteStream(f, 'utf-8');
 		
-		const req = https.request({ method: 'POST', hostname: 'www.toptal.com', path: '/developers/javascript-minifier/raw', }, (resp) => resp.pipe(stream));
+		const req = https.request({ method: 'POST', hostname: 'www.toptal.com', path: '/developers/javascript-minifier/api/raw', }, (resp) => resp.pipe(stream));
 		req.on('error', err => { throw (err) });
 		req.setHeader('Content-Type', 'application/x-www-form-urlencoded');
 		req.setHeader('Content-Length', query.length);

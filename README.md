@@ -77,5 +77,8 @@ Below is just a list of ideas I have for different filters, I may work on them s
 - [x] Export Backup
 	- [x] Copy and backup the export target before exporting
 	- This may be oddly specific to me, but useful as an extra layer of safety
+- [ ] Manifest Generator
+	- [ ] Helpful parameters to grab information from other files such as READMEs and whatnot
+	- Helps to reduce some redundant manifest typing...but I guess it's also kind of pointless
 
 Well, I guess I should get to work on these filters at some point. Typing will get me nowhere :>.

@@ -1,7 +1,7 @@
 {
   "name": "export",
-  "version": "0.0.3",
-  "description": "Exports your add-on int a \".mcaddon\" automatically.",
+  "version": "0.0.4",
+  "description": "Exports your add-on into a \".mcaddon\" automatically.",
   "main": "export.js",
   "repository": {
     "type": "git",
@@ -10,6 +10,7 @@
   "author": "cda94581",
   "license": "MIT",
   "dependencies": {
-    "archiver": "^5.3.0"
+    "archiver": "^5.3.0",
+    "glob": "^8.0.3"
   }
 }
